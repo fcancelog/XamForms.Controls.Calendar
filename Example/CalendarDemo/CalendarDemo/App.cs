@@ -55,7 +55,13 @@ namespace CalendarDemo
 						BackgroundImage = FileImageSource.FromFile("icon.png") as FileImageSource
 					}
 				}
-			};
+                ,
+                SemanalEvents = new List<SemanalEvent>
+                {
+                    new SemanalEvent(){ DayOfWeek = DayOfWeek.Monday },
+                    new SemanalEvent(){ DayOfWeek = DayOfWeek.Thursday }
+                }
+            };
 			/*
 			var white_row = new Pattern { WidthPercent = 1f, HightPercent = 0.04f, Color = Color.Transparent };
 			var white_col = new Pattern { WidthPercent = 0.04f, HightPercent = 1f, Color = Color.Transparent };

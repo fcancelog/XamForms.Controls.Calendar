@@ -573,8 +573,23 @@ namespace XamForms.Controls
 					{
 						SetButtonSpecial(buttons[i], sd);
 					}
+                    else if (SemanalEvents != null)
+                    {
+                        if (buttons[i].Date != null)
+                        {
+                            DateTime date = (DateTime)buttons[i].Date;
 
-					start = start.AddDays(1);
+                            foreach (var se in SemanalEvents)
+                            {
+                                if (date.DayOfWeek == se.DayOfWeek)
+                                {
+                                    SetButtonSpecial(buttons[i], se);
+                                }
+                            }
+                        }
+                    }
+
+                    start = start.AddDays(1);
 					if (i != 0 && (i+1) % 42 == 0)
 					{
 						beginOfMonth = false;

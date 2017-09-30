@@ -11,6 +11,8 @@ namespace XamForms.Controls
 			Date = date;
 		}
 
+        public SpecialDate() { }
+
 		public DateTime Date { get; set; }
 		public Color? TextColor { get; set; }
 		public Color? BackgroundColor { get; set; }
