@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-       <id>XamForms.Controls.Calendar</id>
-       <version>1.1.1</version>
+       <id>FCG.XamForms.Controls.Calendar</id>
+       <version>1.1.2</version>
        <title>Calendar Control Plugin for Xamarin.Forms</title>
-       <authors>RebeccaXam</authors>
-       <owners>RebeccaXam</owners>
-       <licenseUrl>https://github.com/rebeccaXam/XamForms.Controls.Calendar/blob/master/LICENSE</licenseUrl>
-       <projectUrl>https://github.com/rebeccaXam/XamForms.Controls.Calendar</projectUrl>
-      <iconUrl>https://raw.githubusercontent.com/rebeccaXam/XamForms.Controls.Calendar/master/icon.png</iconUrl>
+       <authors>Francisco Cancelo Garcia</authors>
+       <owners>Francisco Cancelo Garcia</owners>
+       <licenseUrl>https://github.com/fcancelog/XamForms.Controls.Calendar/blob/master/LICENSE</licenseUrl>
+       <projectUrl>https://github.com/fcancelog/XamForms.Controls.Calendar</projectUrl>
+	   <iconUrl>https://raw.githubusercontent.com/fcancelog/XamForms.Controls.Calendar/master/icon.png</iconUrl>
        <requireLicenseAcceptance>false</requireLicenseAcceptance>
        <description>
            Custom calendar control for Xamarin.Forms.
@@ -22,6 +22,8 @@
          <dependency id="Xamarin.Forms" version="2.3.4.231" />
        </dependencies>
        <releaseNotes>
+	 [1.1.2]
+	 - New feature: bindable property to set a semanal event
 	 [1.1.1]
 	 - Fix SelectedDate does not select the date in the calendar when set
 	 - Fix Android SpecialDate background image ghost on wrong date when switching months
